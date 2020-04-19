@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Biodata Diri</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+  </head>
+
+  <body class="bg-light">
+
+    <font face ="West Djakarta">
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <font face="Dusty Ranch" size="30">
+          <h2>Biodata Diri</h2>
+        </font>
+        <font size="10" face="My Yellow Car" >
+        <p class="lead">
+          <span class="text-muted">Biodata Diri Anda Dijamin Tidak Akan Dipublikasikan ke Khalayak Ramai.</span></p>
+      </font>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span >INFO PENTING!!!</span>
+            <span class="badge badge-secondary badge-pill"></span>
+
+
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Silahkan Isi Biodata Anda dengan Benar!</h6>
+              </div>
+            </li>
+            
+            
+          </ul>
+
+        </div>
+
+
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Silahkan Masukkan Biodata Anda :)</h4>
+          <form id="form" name="form" class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" name="First" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Last name</label>
+                <input type="text" class="form-control" id="lastName" name="Last" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Ex. Email@gmail.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address">Alamat Lengkap</label>
+              <input type="text" class="form-control" id="address" name="address" placeholder="" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <label for="birthday">Tanggal Lahir</label>
+                  <input type="date" id="birthday" name="birthday">
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">Pendidikan Terakhir</label>
+                <select class="custom-select d-block w-100" id="state" name="Pendidikan" required>
+                  <option value="">Choose...</option>
+                  <option value="SD">SD</option>
+                  <option value="SMP">SMP</option>
+                  <option value="SMA">SMA</option>
+                  <option value="S1">S1</option>
+                  <option value="S2">S2</option>
+                  <option value="S3">S3</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="zip">Nama Institusi</label>
+                <input type="text" class="form-control" id="zip" name="institusi" placeholder="" required>
+                <div class="invalid-feedback">
+                  Zip code required.
+                </div>
+              </div>
+            </div>
+            
+          
+            
+            <hr class="mb-4">
+
+            <h4 class="mb-3">Jenis Kelamin</h4>
+
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" value="L" class="custom-control-input" checked required>
+                <label class="custom-control-label" for="credit">Laki-Laki</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="debit" name="paymentMethod" type="radio" value="P" class="custom-control-input" required>
+                <label class="custom-control-label" for="debit">Perempuan</label>
+              </div>
+              
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Motto Hidup</label>
+                <input type="text" class="form-control" id="cc-name" name="Motto" placeholder="" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Hobby</label>
+                <input type="text" class="form-control" id="cc-number" name="Hobby"placeholder="" required>
+              </div>
+               <div class="col-md-6 mb-3">
+                <label for="cc-number">Silahkan Upload Foto Anda!</label>
+                <input type="file" accept="image/*" name="foto" class="form-control" id="foto" placeholder="" required>
+              </div>
+            </div>
+
+            
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" id="create" name="action" value="create" type="submit">Masukkan Data</button>
+            <button class="btn btn-primary btn-lg btn-block" id="read" name="action" value="read" type="submit">Lihat Semua</button>
+            <button class="btn btn-primary btn-lg btn-block" id="update" name="action" value="update" type="submit">Ubah Data</button>
+            <button class="btn btn-primary btn-lg btn-block" id="delete" name="action" value="delete" type="submit">Hapus Data</button>
+          </form>
+		  <div id="result"></div>
+
+        </div>
+		
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="async.js"></script>
+    <script>
+      $("#form").submit(tangani);   //bagian ini HANYA UNTUK ASYNC, FUNGSI kirimdata ada di file js/async.js
+      $("#tresult").dataTable();
+    </script>
+
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+
+  </font>
+  </body>
+</html>
